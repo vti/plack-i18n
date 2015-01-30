@@ -27,7 +27,8 @@ Plack::I18N is an easy way to add i18n to your application. Plack::I18N supports
 both [Locale::Maketext](https://metacpan.org/pod/Locale::Maketext) `*.pm` files and `gettext` `*.po` files. Use
 whatevers suits better.
 
-See [http://github.com/vti/plack-i18n/examples/](http://github.com/vti/plack-i18n/examples/) directory for both examples.
+See [https://github.com/vti/plack-i18n/tree/master/examples](https://github.com/vti/plack-i18n/tree/master/examples) directory for both
+examples.
 
 ## Language detection
 
