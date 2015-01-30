@@ -77,6 +77,7 @@ sub _build_lexicon {
 
 1;
 __END__
+=pod
 
 =encoding utf-8
 
@@ -137,6 +138,24 @@ A shortcut for C<$env->{'plack.i18n'}->handle($env->{'plack.i18n.language'})>.
 
 =back
 
+=head1 METHODS
+
+=head2 C<new>
+
+Creates new object.
+
+=head2 C<default_language>
+
+Returns default language.
+
+=head2 C<handle($language)>
+
+Returns handle of appropriate language.
+
+=head2 C<languages>
+
+Returns available languages.
+
 =head1 LICENSE
 
 Copyright (C) Viacheslav Tykhanovskyi.
@@ -146,7 +165,17 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-vti E<lt>viacheslav.t@gmail.comE<gt>
+Viacheslav Tykhanovskyi, E<lt>viacheslav.t@gmail.comE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2015, Viacheslav Tykhanovskyi
+
+This program is free software, you can redistribute it and/or modify it under
+the terms of the Artistic License version 2.0.
+
+This program is distributed in the hope that it will be useful, but without any
+warranty; without even the implied warranty of merchantability or fitness for
+a particular purpose.
 
 =cut
-
