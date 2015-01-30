@@ -160,9 +160,9 @@ as a language and C<PATH_INFO> is B<changed> to C</path/to>.
 When C<psgix.session> contains C<plack.i18n.language> then it is used as
 a language. Session option is set after every detection.
 
-=head3 From C<HTTP_ACCEPT>
+=head3 From C<HTTP_ACCEPT_LANGUAGE>
 
-Detects language from C<HTTP_ACCEPT> header using L<I18N::AcceptLanguage>.
+Detects language from C<HTTP_ACCEPT_LANGUAGE> header using L<I18N::AcceptLanguage>.
 
 =head3 From custom callback
 
@@ -213,7 +213,7 @@ Whether detect language from session.
 
 =item use_header
 
-Whether detect language from C<HTTP_ACCEPT>.
+Whether detect language from C<HTTP_ACCEPT_LANGUAGE>.
 
 =item custom_cb
 
