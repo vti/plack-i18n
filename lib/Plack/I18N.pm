@@ -106,9 +106,10 @@ Plack::I18N - I18N for Plack
 =head1 DESCRIPTION
 
 Plack::I18N is an easy way to add i18n to your application. Plack::I18N supports
-both L<Locale::Maketext> Perl files and C<gettext>. Use whatevers suits better.
+both L<Locale::Maketext> C<*.pm> files and C<gettext> C<*.po> files. Use
+whatevers suits better.
 
-See L<http://github.com/vti/plack-i18n/examples/> directory for a both examples.
+See L<http://github.com/vti/plack-i18n/examples/> directory for both examples.
 
 =head2 Language detection
 

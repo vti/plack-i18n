@@ -56,6 +56,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/vti/plack-i18n/issues"
+      },
+      "homepage" : "https://github.com/vti/plack-i18n",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/vti/plack-i18n.git",
+         "web" : "https://github.com/vti/plack-i18n"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:VTI"
 }
