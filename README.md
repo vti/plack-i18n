@@ -51,13 +51,35 @@ Plack::Middleware::I18N registers the following `$env` parameters:
 
     A shortcut for `$env-`{'plack.i18n'}->handle($env->{'plack.i18n.language'})>.
 
-# LICENSE
+# METHODS
 
-Copyright (C) Viacheslav Tykhanovskyi.
+## `new`
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+Creates new object.
+
+## `default_language`
+
+Returns default language.
+
+## `handle($language)`
+
+Returns handle of appropriate language.
+
+## `languages`
+
+Returns available languages.
 
 # AUTHOR
 
-vti <viacheslav.t@gmail.com>
+Viacheslav Tykhanovskyi, <viacheslav.t@gmail.com>
+
+# COPYRIGHT AND LICENSE
+
+Copyright (C) 2015, Viacheslav Tykhanovskyi
+
+This program is free software, you can redistribute it and/or modify it under
+the terms of the Artistic License version 2.0.
+
+This program is distributed in the hope that it will be useful, but without any
+warranty; without even the implied warranty of merchantability or fitness for
+a particular purpose.

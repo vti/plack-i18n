@@ -1,12 +1,12 @@
 {
    "abstract" : "I18N for Plack",
    "author" : [
-      "vti <viacheslav.t@gmail.com>"
+      "Viacheslav Tykhanovskyi, <viacheslav.t@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Minilla/v2.3.0, CPAN::Meta::Converter version 2.142690",
    "license" : [
-      "perl_5"
+      "artistic_2"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -44,12 +44,14 @@
          "requires" : {
             "I18N::AcceptLanguage" : "0",
             "Locale::Maketext::Lexicon" : "0",
+            "Plack" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
             "Test::Fatal" : "0",
+            "Test::MonkeyMock" : "0",
             "Test::More" : "0.98",
             "Test::Requires" : "0"
          }
