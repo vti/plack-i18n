@@ -69,6 +69,6 @@
          "web" : "https://github.com/vti/plack-i18n"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:VTI"
 }

@@ -2,6 +2,11 @@ Revision history for Perl extension Plack-I18N
 
 {{$NEXT}}
 
+0.02 2015-02-01T11:32:15Z
+
+    - fix dist meta information
+    - more reference documentation
+
 0.01 2015-01-30T15:04:12Z
 
     - original version
