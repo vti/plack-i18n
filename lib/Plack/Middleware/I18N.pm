@@ -236,13 +236,6 @@ Whether detect language from a custom callback.
 
 =back
 
-=head1 LICENSE
-
-Copyright (C) Viacheslav Tykhanovskyi.
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
 =head1 AUTHOR
 
 Viacheslav Tykhanovskyi, E<lt>viacheslav.t@gmail.comE<gt>
