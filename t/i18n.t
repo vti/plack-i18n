@@ -2,8 +2,7 @@ use strict;
 use warnings;
 use utf8;
 
-use lib 't/lib';
-
+use Test::Lib;
 use Test::More;
 use Test::Fatal;
 use Test::Requires {
@@ -11,6 +10,7 @@ use Test::Requires {
     'I18N::AcceptLanguage'      => '0'
 };
 
+use File::Basename qw(dirname);
 use Plack::I18N;
 
 subtest 'returns default langauge' => sub {
@@ -69,7 +69,7 @@ subtest 'caches handle' => sub {
 sub _build_i18n {
     Plack::I18N->new(
         i18n_class => 'MyApp::I18N',
-        locale_dir => 't/lib/MyApp/I18N',
+        locale_dir => dirname(__FILE__) . '/lib/MyApp/I18N',
         lexicon    => 'maketext',
         @_
     );
