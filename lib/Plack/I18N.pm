@@ -130,11 +130,11 @@ Holds Plack::I18N instance.
 
 =item C<plack.i18n.language>
 
-Current detected language. A shortcut for C<$env->{'plack.i18n'}->language>.
+Current detected language. A shortcut for C<$env-E<gt>{'plack.i18n'}-E<gt>language>.
 
 =item C<plack.i18n.handle>
 
-A shortcut for C<$env->{'plack.i18n'}->handle($env->{'plack.i18n.language'})>.
+A shortcut for C<$env-E<gt>{'plack.i18n'}-E<gt>handle($env-E<gt>{'plack.i18n.language'})>.
 
 =back
 
