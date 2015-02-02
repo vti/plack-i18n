@@ -144,6 +144,34 @@ A shortcut for C<$env->{'plack.i18n'}->handle($env->{'plack.i18n.language'})>.
 
 Creates new object.
 
+Options:
+
+=over
+
+=item lexicon
+
+One of C<gettext> or C<maketext>.
+
+=item i18n_class
+
+This is usually C<MyApp::I18N>. This class is automatically generated if
+does not exist. In case of C<gettext> C<i18n_class> it even doesn't
+have to be specified.
+
+=item locale_dir
+
+Directory where translations are stored.
+
+=item default_language
+
+Default language. C<en> by default.
+
+=item languages
+
+Available languages. Automatically detected unless specified.
+
+=back
+
 =head2 C<default_language>
 
 Returns default language.
