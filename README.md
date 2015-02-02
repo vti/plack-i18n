@@ -45,17 +45,41 @@ Plack::Middleware::I18N registers the following `$env` parameters:
 
 - `plack.i18n.language`
 
-    Current detected language. A shortcut for `$env-`{'plack.i18n'}->language>.
+    Current detected language. A shortcut for `$env->{'plack.i18n'}->language`.
 
 - `plack.i18n.handle`
 
-    A shortcut for `$env-`{'plack.i18n'}->handle($env->{'plack.i18n.language'})>.
+    A shortcut for `$env->{'plack.i18n'}->handle($env->{'plack.i18n.language'})`.
 
 # METHODS
 
 ## `new`
 
 Creates new object.
+
+Options:
+
+- lexicon
+
+    One of `gettext` or `maketext`.
+
+- i18n\_class
+
+    This is usually `MyApp::I18N`. This class is automatically generated if
+    does not exist. In case of `gettext` `i18n_class` it even doesn't
+    have to be specified.
+
+- locale\_dir
+
+    Directory where translations are stored.
+
+- default\_language
+
+    Default language. `en` by default.
+
+- languages
+
+    Available languages. Automatically detected unless specified.
 
 ## `default_language`
 

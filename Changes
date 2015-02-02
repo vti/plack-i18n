@@ -2,6 +2,11 @@ Revision history for Perl extension Plack-I18N
 
 {{$NEXT}}
 
+0.04 2015-02-02T08:26:57Z
+
+    - fix order in tests
+    - more docs
+
 0.03 2015-02-02T07:26:22Z
 
     - use abs paths in tests
