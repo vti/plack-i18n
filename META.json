@@ -51,6 +51,7 @@
       "test" : {
          "requires" : {
             "Test::Fatal" : "0",
+            "Test::Lib" : "0",
             "Test::MonkeyMock" : "0",
             "Test::More" : "0.98",
             "Test::Requires" : "0"
@@ -69,6 +70,6 @@
          "web" : "https://github.com/vti/plack-i18n"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_authority" : "cpan:VTI"
 }
