@@ -58,7 +58,7 @@ sub detect_languages {
       'lib', split /::/, $self->{i18n_class};
 
     opendir(my $dh, $path) or croak "Can't opendir $path: $!";
-    my @files = grep { /\.p[om]$/ && -e "$path/$_" } readdir($dh);
+    my @files = grep { /\.p[om]$/ && -e "$path/$_" } sort readdir($dh);
     closedir $dh;
 
     my @languages = @files;

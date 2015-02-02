@@ -52,7 +52,7 @@ sub detect_languages {
     my $path = $self->{locale_dir};
 
     opendir(my $dh, $path) or croak "Can't opendir $path: $!";
-    my @files = grep { /\.p[om]$/ && -e "$path/$_" } readdir($dh);
+    my @files = grep { /\.p[om]$/ && -e "$path/$_" } sort readdir($dh);
     closedir $dh;
 
     my @languages = @files;

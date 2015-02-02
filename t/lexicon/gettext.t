@@ -23,7 +23,7 @@ subtest 'throws when no locale dir' => sub {
 subtest 'detects languages' => sub {
      my $lexicon = _build_lexicon();
 
-     is_deeply [$lexicon->detect_languages], [qw/ru en/];
+     is_deeply [$lexicon->detect_languages], [qw/en ru/];
 };
 
 subtest 'builds class' => sub {
